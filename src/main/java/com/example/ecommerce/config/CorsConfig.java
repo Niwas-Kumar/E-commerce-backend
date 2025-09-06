@@ -13,10 +13,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(
-                                "https://e-commerce-frontend-bice-phi.vercel.app", // React default
-                                "http://localhost:5173", // Vite default
-                                "http://localhost:5176"  // your dev port
+                        .allowedOriginPatterns(
+                                "https://e-commerce-frontend-bice-phi.vercel.app", // ✅ deployed frontend
+                                "http://localhost:5173",  // ✅ local dev
+                                "http://localhost:5176"   // ✅ alt dev port
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
