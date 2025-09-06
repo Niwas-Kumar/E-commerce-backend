@@ -1,3 +1,6 @@
+# Use official OpenJDK with Maven
+FROM maven:3.9.9-eclipse-temurin-21 AS build
+
 # Stage 1: Build
 FROM openjdk:21-jdk-slim AS build
 WORKDIR /app
