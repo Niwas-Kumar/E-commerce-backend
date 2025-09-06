@@ -70,7 +70,7 @@ public class SecurityConfig {
         config.setAllowedOrigins(List.of(
                 "http://localhost:5173", // Vite default
                 "http://localhost:5176", // your dev port
-                "http://localhost:3000"  // CRA default
+                "https://e-commerce-frontend-bice-phi.vercel.app"  // CRA default
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
