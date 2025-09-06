@@ -14,7 +14,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://localhost:3000", // React default
+                                "https://e-commerce-frontend-wxmh.vercel.app/", // React default
                                 "http://localhost:5173", // Vite default
                                 "http://localhost:5176"  // your dev port
                         )
